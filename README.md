@@ -2,7 +2,7 @@
 
 This is Todo list with responsive design. You can add todos, edit, remove and mark them and they will be saved in localstorage.
 
-![previes](preview.png)
+![preview](preview.png)
 
 ## Technologies Used
 
