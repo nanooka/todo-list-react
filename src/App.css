@@ -22,6 +22,39 @@ main {
   align-items: center;
 }
 
+.plus-btn {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid grey;
+  margin: 8px 0;
+  font-size: 20px;
+  padding-bottom: 3px;
+  background-color: rgba(128, 128, 128, 0.219);
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.add-input {
+  width: 250px;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid grey;
+  font-family: "Jost";
+  font-size: 16px;
+  padding-left: 8px;
+}
+
+.add-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid grey;
+  cursor: pointer;
+  margin-left: 8px;
+  background-color: rgba(128, 128, 128, 0.219);
+}
+
 h1 {
   font-size: 20px;
   font-weight: 300;
@@ -33,14 +66,149 @@ h2 {
   font-size: 18px;
 }
 
+li {
+  list-style-type: none;
+  border: 1px solid grey;
+  border-radius: 8px;
+  width: 300px;
+  /* height: 40px; */
+  margin-left: -40px;
+  margin-bottom: 8px;
+  padding: 4px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+  white-space: normal;
+  overflow-wrap: break-word;
+  position: relative;
+}
+.todo-text {
+  max-width: 238px;
+}
+
+.edit-btn,
+.remove-btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  position: absolute;
+  right: -40px;
+  top: 4px;
+}
+
+.remove-btn {
+  /* margin-left: 4px; */
+  color: red;
+  right: -96px;
+}
+
+.editing-input {
+  border: none;
+  /* border-radius: 8px; */
+  width: 238px;
+}
+.editing-input:focus {
+  outline: none;
+}
+
+.save-btn,
+.cancel-btn {
+  position: absolute;
+  right: -43px;
+  top: 4px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.cancel-btn {
+  right: -90px;
+}
+
+.plus-btn:hover,
+.add-btn:hover {
+  background-color: rgb(244, 244, 144);
+}
+
+.edit-btn:hover,
+.remove-btn:hover,
+.save-btn:hover,
+.cancel-btn:hover {
+  text-decoration: underline;
+}
+
+.click-btn {
+  justify-self: flex-end;
+  align-self: flex-start;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
 @media screen and (min-width: 1024px) {
   header {
     padding: 40px;
   }
+
   h1 {
     font-size: 40px;
   }
+
   h2 {
     font-size: 30px;
+  }
+
+  .plus-btn {
+    width: 50px;
+    height: 50px;
+    margin: 18px 0;
+    font-size: 26px;
+  }
+
+  .add-input {
+    width: 420px;
+    height: 60px;
+    font-size: 18px;
+  }
+  .add-btn {
+    width: 60px;
+    height: 60px;
+    font-size: 16px;
+    margin-left: 12px;
+  }
+
+  li {
+    width: 494px;
+    min-height: 50px;
+    margin-left: -40px;
+    padding: 8px;
+  }
+  .todo-text {
+    max-width: 420px;
+  }
+
+  .editing-input {
+    width: 420px;
+  }
+
+  .remove-btn {
+    font-size: 16px;
+    right: -116px;
+  }
+  .cancel-btn {
+    font-size: 16px;
+    right: -112px;
+  }
+  .edit-btn {
+    font-size: 16px;
+    right: -50px;
+  }
+  .save-btn {
+    font-size: 16px;
+    right: -54px;
+  }
+  .click-btn {
+    margin-top: 3px;
   }
 }

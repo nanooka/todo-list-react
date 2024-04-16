@@ -8,7 +8,10 @@ export const todoReducer = (
   state: TodoStateType,
   action: TodoActionType
 ): TodoStateType => {
-  let updatedTodosAdd, updatedTodosRemove, updatedTodosEdit;
+  let updatedTodosAdd,
+    updatedTodosRemove,
+    updatedTodosEdit,
+    updatedTodosToggleCheck;
 
   switch (action.type) {
     case "ADD_TODO":
@@ -37,6 +40,15 @@ export const todoReducer = (
       return {
         ...state,
         todos: updatedTodosEdit,
+      };
+    case "TOGGLE_CHECK":
+      updatedTodosToggleCheck = state.todos.map((todo) =>
+        todo.id === action.payload ? { ...todo, checked: !todo.checked } : todo
+      );
+      localStorage.setItem("todos", JSON.stringify(updatedTodosToggleCheck));
+      return {
+        ...state,
+        todos: updatedTodosToggleCheck,
       };
     case "SET_TODOS":
       return {

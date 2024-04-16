@@ -1,30 +1,31 @@
-# React + TypeScript + Vite
+# Todo list
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is Todo list with responsive design. You can add todos, edit, remove and mark them and they will be saved in localstorage.
 
-Currently, two official plugins are available:
+![previes](preview.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies Used
 
-## Expanding the ESLint configuration
+- React, Typescript, CSS
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Installation
 
-- Configure the top-level `parserOptions` property like this:
+You don't need to run app for use, but if you still want, follow these steps:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+1. Clone this repository.
+2. Install dependencies by runnin npm install.
+3. Start application using npm run dev.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Contributing
+
+I welcome contributions from the community to improve the website's functionality, user experience, and overall performance. If you'd like to contribute, please follow these steps:
+
+1. Fork the repository.
+2. Create your feature branch (git checkout -b feature/YourFeature).
+3. Commit your changes (git commit -am 'Add some feature').
+4. Push to the branch (git push origin feature/YourFeature).
+5. Create a new Pull Request.
+
+## Contact
+
+If you have any questions, suggestions, or concerns, please don't hesitate to contact me at nana.grdzelishvili7@gmail.com. I appreciate your feedback!
